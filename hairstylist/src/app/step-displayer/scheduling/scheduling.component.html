@@ -1,1 +1,61 @@
-<p>scheduling works!</p>
+<div class="container">
+    <div class="title-container">
+        <h1 class="title">BARBEARIA - AGENDAR HORÁRIO</h1>
+        <h2 class="title">Preencha os campos abaixo:</h2>
+    </div>
+    <section class="card">
+        <div class="card-header">
+            <p class="section-subtitle">Agendamento - Barbearia</p>
+            <a routerLink="/" class="secondary-button">Voltar</a>
+        </div>
+        <div class="info-container">
+            <div class="input-container">
+                <label for="form-name" class="label">Nome</label>
+                <input type="text" name="name" id="form-name" class="input large-input" placeholder="Nome">
+            </div>
+
+            <div class="input-container">
+                <label for="form-email" class="label">E-mail</label>
+                <input type="email" name="email" id="form-email" class="input large-input" placeholder="E-mail">
+            </div>
+
+            <div class="input-container">
+                <label for="form-cpf" class="label">CPF</label>
+                <input type="number" name="cpf" id="form-cpf" class="input large-input" placeholder="CPF">
+            </div>
+        </div>
+        <div class="scheduling-container">
+            <div class="input-container" style="margin-bottom: 12px;">
+                <label for="form-name" class="label">Barbeiro</label>
+                <select name="barber" id="form-barber-selector" class="input" style="padding:12px;">
+                    <option value="" disabled selected hidden>Selecione um barbeiro</option>
+                    <option value="barber1">José</option>
+                    <option value="barber2">João</option>
+                    <option value="barber3">Josão</option>
+                </select>
+            </div>
+            <!-- <select name="barber" id="form-barber-selector" *ngFor="barber in barber_list">
+                <option [value]="barber.id">{{barber.name}}</option>
+            </select> -->
+            <div class="date-container">
+                <div class="input-container">
+                    <label for="form-data" class="label">Data</label>
+                    <input type="date" name="data" id="form-data" class="input date-input" style="padding:11px;">
+                </div>
+
+                <div class="input-container">
+                    <label for="form-schedule-selector" class="label">Horários Disponíveis</label>
+                    <select name="schedule" id="form-schedule-selector" class="input" style="padding:12px;">
+                        <option value="" disabled selected hidden>Selecione um horário</option>
+                        <option value="schedule1">10:30</option>
+                        <option value="schedule2">11:00</option>
+                        <option value="schedule3">11:30</option>
+                    </select>
+                    <!-- <select name="schedule" id="form-schedule-selector" *ngFor="schedule in scheduling_list">
+                        <option [value]="schedule.id">{{schedule.name}}</option>
+                    </select> -->
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

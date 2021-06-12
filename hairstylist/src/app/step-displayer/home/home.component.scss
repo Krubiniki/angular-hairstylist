@@ -1,0 +1,57 @@
+@import 'src/styles.scss';
+
+.container{
+    text-align: center;
+    max-width: 420px;
+    width: 100%;
+    margin: 0px auto;
+    padding-top: 80px;
+}
+
+.title-container{
+    padding-bottom: 20px;
+}
+
+.card-container{
+    padding: 100px 0px 60px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 280px;
+}
+
+.text{
+    font-family: $main-font;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $main-black;
+}
+
+.caption{
+    font-family: $main-font;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: $main-black;
+}
+
+.black-button{
+    background-color: $main-black;
+    &:hover{
+        background-color: #000000E6;
+    }
+}
+
+@media only screen and (max-width:444px){
+    .container{
+        margin: 0px 12px;
+        width: calc(100% - 24px);
+        padding-top: 40px
+    }
+    .card-container{
+        padding: 60px 0px 40px
+    }
+}

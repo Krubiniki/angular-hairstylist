@@ -417,7 +417,7 @@ $error:#c2272a;
 
 $main-background:#fafafa;
 .main-background{
-    background-color:#fafafa;
+    background-color:#f4f4f4;
 }
 
 //Fonts - Roboto full family
@@ -431,8 +431,8 @@ $main-font: 'Roboto', sans-serif;
 .title{
     font-family: $main-font;
     font-style: normal;
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 26px;
     font-weight: 400;
     color: $main-black;
 }
@@ -447,11 +447,21 @@ $main-font: 'Roboto', sans-serif;
     color: $main-black;
 }
 
-.label{
+.section-subtitle{
     font-family: $main-font;
     font-style: normal;
     font-size: 16px;
     line-height: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $main-black;
+}
+
+.label{
+    font-family: $main-font;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
     font-weight: 600;
     color: $main-grey;
 }
@@ -461,11 +471,19 @@ $main-font: 'Roboto', sans-serif;
 .primary-button{
     border: none;
     border-radius: 5px;
-    padding: 14px 24px;
+    padding: 14px;
     color: #FFFFFF;
     background-color: $main-purple;
     font-family: $main-font;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
     text-transform: uppercase;
+    max-width:140px;
+    width: 100%;
+    margin: 0px auto;
+    text-decoration: none;
     &:hover{
         transition: all 0.3s;
         background-color: #5f72e3E6;
@@ -502,7 +520,7 @@ $main-font: 'Roboto', sans-serif;
     width: calc(100% - 32px);
 }
 
-input{
+.input{
     border:1px solid $secondary-grey;
     padding: 14px 12px;
     border-radius: 5px;

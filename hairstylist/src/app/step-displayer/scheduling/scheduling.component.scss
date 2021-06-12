@@ -1,0 +1,82 @@
+@import 'src/styles.scss';
+
+.container{
+    text-align: center;
+    max-width: 920px;
+    width: 100%;
+    margin: 0px auto;
+    padding-top: 100px;
+}
+
+.title-container{
+    padding-bottom: 20px;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.info-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+label{
+    margin-bottom: 12px;
+}
+
+.large-input{
+    width: 400px;
+    margin-bottom: 24px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.scheduling-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.date-container{
+    max-width: 426px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+@media only screen and (max-width:944px){
+    .container{
+        margin: 0px 12px;
+        width: calc(100% - 24px);
+        padding-top: 40px
+    }
+}
+
+@media only screen and (max-width:484px){
+    .input-container{
+        width: calc(100% - 24px);
+    }
+    .large-input{
+        width: 100%;
+    }
+    .card-header{
+        justify-content: center;
+    }
+    .date-input{
+        margin-bottom: 24px;
+    }
+}

@@ -502,6 +502,7 @@ $main-font: 'Roboto', sans-serif;
     background-color: #FFFFFF;
     font-family: $main-font;
     text-transform: uppercase;
+    text-decoration: none;
     &:hover{
         transition: all 0.3s;
         background-color: #5f72e322;
